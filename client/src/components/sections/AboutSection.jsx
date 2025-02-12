@@ -42,7 +42,8 @@ const cards = [
 
 const AboutSection = () => {
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mt-24
+        lg:mt-32">
 
             <div className="text-center lg:max-w-4xl">
                 <div className='lg:max-w-xl mx-auto'>
@@ -50,7 +51,7 @@ const AboutSection = () => {
                 </div>
 
                 <p className="mt-8">
-                    At Oak Harbor Web Designs, we specialize in small business web design and development for clients anywhere in the US and Canada. Every line of code is written by hand to ensure the best performance and make Google happy, which helps bring in more customers to your site and bring more revenue to your business. We also manage the edits for you and will never leave you high and dry. Our goal is to create long term relationships with our clients and see them grow over time.
+                    Na CWB Web Designs, somos especializados em design e desenvolvimento de sites para pequenas empresas para clientes em qualquer lugar do Brasil. Cada linha de código é escrita à mão para garantir o melhor desempenho e deixar o Google feliz, o que ajuda a atrair mais clientes para seu site e gerar mais receita para seu negócio. Também gerenciamos as edições e manutenções para você nunca ficar na mão. Nosso objetivo é criar relacionamentos de longo prazo com nossos clientes e vê-los crescer ao longo do tempo.
                 </p>
             </div>
 

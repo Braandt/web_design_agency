@@ -1,4 +1,6 @@
+import { useState } from "react"
 import ContactButton from "./components/ContactButton"
+import ContactPopUp from "./components/ContactPopUp"
 import AboutSection from "./components/sections/AboutSection"
 import ContactButtonSection from "./components/sections/ContactButtonSection"
 import EfficiencySection from "./components/sections/EfficiencySection"
@@ -12,24 +14,28 @@ import ServicesSection from "./components/sections/ServicesSection"
 
 function App() {
 
+
     return (
-        <div className="px-4 mt-4 lg:px-10 lg:pt-6 font-sans-1">
-            <Header />
+        <div className="">
+            <div className="px-4 mt-4 lg:px-10 lg:pt-6 font-sans-1 scroll-smooth
+        lg:max-w-[1600px] lg:mx-auto">
+                <Header />
 
-            <Hero />
+                <Hero />
 
-            <AboutSection />
+                <AboutSection />
 
-            <ContactButtonSection />
+                <ContactButtonSection />
 
-            <ServicesSection />
+                <ServicesSection />
 
-            <PortfolioSection />
+                <PortfolioSection />
 
-            <EfficiencySection />
+                <EfficiencySection />
 
-            <PricesSection />
+                <PricesSection />
 
+            </div>
             <Footer />
         </div>
     )

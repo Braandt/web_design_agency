@@ -3,7 +3,7 @@ import { FaMobile } from 'react-icons/fa'
 const Card1 = ({ icon, title, text }) => {
 
     return (
-        <a href='/' className="bg-gradient-to-br bg-black/50 p-6 rounded-2xl h-fit transition-all group
+        <div className="bg-gradient-to-br bg-black/50 p-6 rounded-2xl h-fit transition-all group cursor-default
         hover:from-cyan-900/50 hover:to-yellow-500/10 hover:shadow-xl">
 
             <div className="flex items-center justify-center bg-cyan-950 aspect-square w-16 rounded-xl -mt-16 transition-all
@@ -16,10 +16,7 @@ const Card1 = ({ icon, title, text }) => {
             <p className="mt-2 mb-6">
                 {text}
             </p>
-            <div href="/" className="underline text-sm">
-                Saber mais
-            </div>
-        </a>
+        </div>
     )
 }
 

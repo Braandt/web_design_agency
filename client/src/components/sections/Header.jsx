@@ -1,10 +1,10 @@
 const Header = () => {
     return (
-        <div className="fixed left-0 right-0 mx-4 flex justify-between items-center rounded-lg px-3 h-16 bg-cyan-950/60 border-[1px] border-white/10 backdrop-blur-lg font-sans-3 tracking-wider z-50
+        <div className="mx-4 flex justify-between items-center rounded-lg px-3 h-16 bg-cyan-950/60 border-[1px] border-white/10 backdrop-blur-lg font-sans-3 tracking-wider z-50
         lg:px-6 lg:rounded-xl lg:h-20 lg:mx-8">
 
-            <div>
-                CWB Web Design
+            <div className="h-12 flex">
+                <img src="/logo.svg" alt="" />
             </div>
 
             <div

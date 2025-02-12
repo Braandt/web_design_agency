@@ -5,50 +5,55 @@ import ContactButton from "../ContactButton"
 
 const options = [
     {
-        name: 'lump sum',
+        name: 'Básico',
         items: [
-            'Design and development',
-            '$25/mo hosting',
-            '$100 fee per page after 5',
-            '$25/mo hosting',
-            'Design and development',
-            '$25/mo hosting',
-            '$100 fee per page after 5',
+            'Design e desenvolvimento',
+            'R$20/mês para o hospedagem',
+            'R$100 a cada página além das 5 principais',
+            '+ R$250 para adicionar um blog',
+            'Edições ilimitadas',
+            'Suporte 24/7'
         ],
-        price: '$3600'
+        price: '$800'
     },
     {
-        name: 'monthly',
+        name: 'Ecommerce / Blog',
         items: [
             'Design and development',
-            '$25/mo hosting',
-            '$100 fee per page after 5',
-            '$25/mo hosting',
-            'Design and development',
-            '$25/mo hosting',
-            '$100 fee per page after 5',
+            'R$20/mês para o hospedagem',
+            'R$100 a cada página além das 5 principais',
+            'Totalmente editável pelo cliente sem programação',
+            'Loja Shopify customizada',
+            'Entrega integrada',
+            'Suporte 24/7',
         ],
-        price: '$3600',
+        price: '$1200',
         highlight: true
-    },
-    {
-        name: 'ecommerce',
-        items: [
-            'Design and development',
-            '$25/mo hosting',
-            '$100 fee per page after 5',
-            '$25/mo hosting',
-            'Design and development',
-            '$25/mo hosting',
-            '$100 fee per page after 5',
-        ],
-        price: '$8000'
-    },
+    }
+    // {
+    //     name: 'ecommerce',
+    //     items: [
+    //         'Design and development',
+    //         '$25/mo hosting',
+    //         '$100 fee per page after 5',
+    //         '$25/mo hosting',
+    //         'Design and development',
+    //         '$25/mo hosting',
+    //         '$100 fee per page after 5',
+    //     ],
+    //     price: '$8000'
+    // },
 ]
 
 const Option = ({ name, items, price, highlight = false }) => {
     return (
         <div className="relative bg-black/60 rounded-3xl mt-4 p-8 flex-1">
+            {highlight && <>
+                <div className="absolute w-full h-full border-[1px] border-cyan-50 top-0 left-0 rounded-3xl" />
+                <div className="absolute w-full h-full border-[1px] border-cyan-200 blur top-0 left-0 rounded-3xl" />
+                <div className="absolute w-full h-full border-[1px] border-cyan-200 blur top-0 left-0 rounded-3xl" />
+                <div className="absolute w-full h-full border-[1px] border-cyan-200 blur top-0 left-0 rounded-3xl" />
+            </>}
             <p className="uppercase font-sans-3 text-4xl">{name}</p>
 
             {items.map((item, index) => (
@@ -58,18 +63,11 @@ const Option = ({ name, items, price, highlight = false }) => {
                 </div>
             ))}
 
-            <div className="mt-8 font-sans-3 text-5xl">{price} <span className="font-sans-1 text-base">+$25/mo hosting</span></div>
+            <div className="mt-8 font-sans-3 text-5xl">{price} <span className="font-sans-1 text-base">+R$25/mês hospedagem</span></div>
 
             <div className="mt-8">
                 <ContactButton text='saber mais' />
             </div>
-
-            {highlight && <>
-                <div className="absolute w-full h-full border-[1px] border-cyan-50 top-0 left-0 rounded-3xl" />
-                <div className="absolute w-full h-full border-[1px] border-cyan-200 blur top-0 left-0 rounded-3xl" />
-                <div className="absolute w-full h-full border-[1px] border-cyan-200 blur top-0 left-0 rounded-3xl" />
-                <div className="absolute w-full h-full border-[1px] border-cyan-200 blur top-0 left-0 rounded-3xl" />
-            </>}
         </div>
     )
 }
@@ -77,8 +75,7 @@ const Option = ({ name, items, price, highlight = false }) => {
 const PricesSection = () => {
     return (
         <div
-            className="pt-12 bg-gradient-to-b from-black/40 to-black/0 -mx-4 px-4
-            lg:-mx-10 lg:px-10"
+            className="mt-24 lg:mt-32"
         >
             <div className="max-w-xl">
                 <SectionTitle title='Opções de preços de acordo com o projeto' preTitle='Nossos preços' />

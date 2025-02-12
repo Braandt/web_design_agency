@@ -1,10 +1,13 @@
 import { FaExternalLinkAlt } from "react-icons/fa"
 
-const Service = ({ title, text, src }) => {
+const Service = ({ title, text, src, href }) => {
     return (
-        <a href='/'
+        <a
+            href={href}
             className="relative group transition-all rounded-xl p-6 max-w-xl
         hover:shadow-2xl hover:bg-cyan-950"
+            target="_blank"
+            title={title}
         >
             <img className="group-hover:scale-105 transition-all  w-full mx-auto" src={src} alt="" />
             <div className="font-sans-3 text-2xl">{title}</div>

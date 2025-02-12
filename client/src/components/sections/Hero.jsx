@@ -4,9 +4,9 @@ import ContactButton from '../ContactButton'
 const Hero = () => {
     return (
         <div
-            className="flex flex-col gap-6 items-center h-[calc(100vh-80px)] justify-center pt-24
-            md:mt-6
-            lg:flex-row lg:max-w-7xl lg:mx-auto"
+            className="my-6 flex items-center flex-col
+            md:mt-12
+            lg:flex-row lg:justify-center lg:px-12 lg:mt-24"
         >
 
             {/* Background */}
@@ -17,7 +17,7 @@ const Hero = () => {
 
             <div
                 className="flex flex-col text-center items-center
-                lg:text-left lg:items-start"
+                lg:text-left lg:items-start lg:w-1/2"
             >
                 <p
                     className="uppercase font-sans-3 tracking-widest
@@ -27,14 +27,14 @@ const Hero = () => {
                 </p>
 
                 <p
-                    className="text-4xl mt-1 uppercase font-sans-3
+                    className="text-4xl mt-1 uppercase font-sans-3 max-w-[80%]
                     lg:text-6xl"
                 >
                     Websites para empresas locais
                 </p>
 
                 <p
-                    className="font-sans text-sm mt-4
+                    className="font-sans text-sm mt-4 max-w-[80%]
                 lg:text-lg"
                 >
                     Sites programados 100% sob medida, sem criador de site automático. Resultado superior incluindo Google Ads e serviços de SEO
@@ -46,7 +46,13 @@ const Hero = () => {
                 >
                     <ContactButton />
 
-                    <button>Saber mais</button>
+                    <a
+                        className="flex items-center scroll-smooth"
+                        title="saiba mais"
+                        href="#portfolio"
+                    >
+                        Saber mais
+                    </a>
                 </div>
             </div>
 
@@ -54,7 +60,7 @@ const Hero = () => {
                 <img className="" src="/laptop.webp" alt="" />
             </div>
 
-            <div className="mt-12 hidden h-full lg:block">
+            <div className="mt-12 hidden h-full w-1/2 lg:block">
                 <img className="h-full w-full object-contain" src="/laptop.png" alt="" />
             </div>
         </div>

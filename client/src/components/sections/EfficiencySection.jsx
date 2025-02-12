@@ -31,7 +31,7 @@ const EfficiencyItem2 = ({ icon, text }) => {
             </div>
 
             <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo eveniet, impedit officia sit sapiente.
+                {text}
             </div>
         </div>
     )
@@ -40,19 +40,20 @@ const EfficiencyItem2 = ({ icon, text }) => {
 
 const EfficiencySection = () => {
     return (
-        <div className='bg-black/50 -mx-4 p-4 pt-8 mt-12
-        lg:-mx-10 lg:p-16 lg:flex lg:flex-row-reverse lg:gap-12'
+        <div className='bg-black/50 -mx-4 p-4 pt-8 mt-24
+        lg:-mx-10 lg:p-16 lg:flex lg:flex-row-reverse lg:gap-12 lg:mt-32'
         >
 
             <div className="lg:w-1/2">
                 <div className="flex justify-between gap-2">
-                    <EfficiencyItem number='100%' text='Satisfaction Guaranteed' />
+                    <EfficiencyItem number='100%' text='Satisfação Garantida' />
                     <EfficiencyItem number='100' text='Page Speed Scores' />
-                    <EfficiencyItem number='5/5' text='Google Reviews' />
+                    <EfficiencyItem number='5/5' text='Revies do 
+                    Google' />
                 </div>
 
                 <div className="mt-8">
-                    <img className="rounded-xl" src="performance.avif" alt="" />
+                    <img className="rounded-xl" src="performance.png" alt="" />
                 </div>
             </div>
 
@@ -61,16 +62,17 @@ const EfficiencySection = () => {
                 <div className="mt-8">
                     <SectionTitle preTitle='Performance' title='Seu site com a maior performance' />
 
-                    <p>When it comes to website load times, not very many can get the Google PageSpeed scores that we get with each and every site. Test your website load times with Google PageSpeed Insights and see what your current site is scoring right now.</p>
-                    <p></p>
+                    <p>Quando se trata de tempos de carregamento de sites, poucos conseguem obter as pontuações do Google PageSpeed ​​que obtemos com cada site. Teste os tempos de carregamento do seu site com o Google PageSpeed ​​Insights e veja qual é a pontuação do seu site atual agora.</p>
                 </div>
 
                 <div className="flex flex-col gap-4 mt-4">
-                    <EfficiencyItem2 icon={<CgSandClock size='48' />} text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo eveniet, impedit officia sit sapiente.'} />
 
-                    <EfficiencyItem2 icon={<TbSeo size='48' />} text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo eveniet, impedit officia sit sapiente.'} />
+                    <EfficiencyItem2 icon={<CgSandClock size='48' />} text={'Menores tempos de carregamento significam mais tráfego e mais conversões de site ao longo do tempo.'} />
 
-                    <EfficiencyItem2 icon={<MdDevices size='48' />} text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo eveniet, impedit officia sit sapiente.'} />
+                    <EfficiencyItem2 icon={<TbSeo size='48' />} text={'Sites mais rápidos podem ajudar a melhorar o SEO e o desempenho dos seus anúncios do Google.'} />
+
+                    <EfficiencyItem2 icon={<MdDevices size='48' />} text={'Nossos sites carregam instantaneamente em menos de 1 segundo ou menos, o que leva a uma melhor experiência do usuário e conversões.'} />
+
                 </div>
 
                 <div className="flex mt-12">

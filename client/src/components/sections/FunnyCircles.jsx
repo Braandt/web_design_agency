@@ -28,6 +28,7 @@ const FunnyCircles = () => {
                     <div
                         className="absolute duration-500 aspect-square border-[1px] border-white rounded-full  transition-all"
                         style={style}
+                        key={index}
                     />
                 ))
                 }

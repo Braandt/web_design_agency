@@ -8,18 +8,18 @@ const contacts = [
     {
         icon: <FaPhone />,
         text: 'WhatsApp',
-        href: '/'
+        href: 'https://wa.me/5541987304848'
     },
     {
         icon: <FaEnvelope />,
         text: 'Email',
-        href: '/'
-    },
-    {
-        icon: <BiPlanet />,
-        text: 'Curitiba',
-        href: '/'
-    },
+        href: 'mailto:leoobrant@hotmail.com'
+    }
+    // {
+    //     icon: <BiPlanet />,
+    //     text: 'Curitiba',
+    //     href: '/'
+    // },
 ]
 
 const today = new Date()
@@ -27,13 +27,11 @@ const today = new Date()
 const Footer = () => {
     return (
         <>
-            <div className="flex flex-col items-center pt-48">
+            <div className="flex flex-col items-center mt-72">
 
-                <div className="font-sans-3 text-5xl text-center max-w-lg">Pronto para ter o site que sua empresa precisa?</div>
+                <div className="font-sans-3 text-5xl text-center max-w-lg mb-12">Pronto para ter o site que sua empresa merece?</div>
 
-                <div className="mt-12 scale-110">
-                    <ContactButton text="entrar em contato hoje" />
-                </div>
+                <ContactButton text="entrar em contato hoje" />
 
                 <div className="absolute up-and-down w-40 -z-10">
                     <div className="relative">
@@ -50,8 +48,8 @@ const Footer = () => {
 
             </div>
 
-            <div className="bg-black/50 -mx-4 px-4 pt-12 mt-12
-            lg:-mx-10 lg:px-10 lg:pt-4">
+            <div className="bg-black/50 px-4 pt-12 mt-48
+            lg:px-10 lg:pt-4">
                 <div className="flex flex-col md:text-center
                 lg:flex-row lg:items-center">
                     <div className="font-sans-3 text-4xl
@@ -63,20 +61,20 @@ const Footer = () => {
                         <div>
                             <h1 className="text-2xl font-sans-3">Quick links</h1>
                             <div className="flex flex-col mt-2 gap-2">
-                                <a href="/">Home</a>
-                                <a href="/">About</a>
-                                <a href="/">Services</a>
-                                <a href="/">Prices</a>
+                                <a href="/">Inicio</a>
+                                <a href="#about">Sobre</a>
+                                <a href="#services">Serviços</a>
+                                <a href="#prices">Preços</a>
                             </div>
                         </div>
 
                         <div>
-                            <h1 className="text-2xl font-sans-3">Contact Information</h1>
+                            <h1 className="text-2xl font-sans-3">Contatos</h1>
                             <div className='flex flex-col gap-2 mt-2 md:items-center'>
                                 {contacts.map((props, index) => (
-                                    <div className="flex items-center gap-2">
+                                    <div className="flex items-center gap-2" key={index}>
                                         {props.icon}
-                                        <a href={props.href}>{props.text}</a>
+                                        <a href={props.href} target="_blank">{props.text}</a>
                                     </div>
                                 ))}
                             </div>
