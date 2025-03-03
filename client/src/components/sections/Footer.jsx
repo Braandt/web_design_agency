@@ -53,8 +53,8 @@ const Footer = () => {
                 <div className="flex flex-col md:text-center
                 lg:flex-row lg:items-center">
                     <div className="font-sans-3 text-4xl
-                    lg:w-1/2 lg:text-center lg:text-7xl">
-                        CWB WEB DESIGN</div>
+                    lg:w-1/2 lg:text-center lg:text-5xl tracking-wider">
+                        <span className="text-white/60">Leonardo</span> Brandt</div>
 
                     <div className="mt-4 flex flex-col gap-4
                     lg:flex-row lg:justify-around lg:w-1/2">
@@ -64,7 +64,6 @@ const Footer = () => {
                                 <a href="/">Inicio</a>
                                 <a href="#about">Sobre</a>
                                 <a href="#services">Serviços</a>
-                                <a href="#prices">Preços</a>
                             </div>
                         </div>
 
@@ -82,7 +81,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="py-4 mt-4 border-t-[1px] border-cyan-50 text-center">
-                    &copy; Copyright {today.getFullYear()} CWB Web Design
+                    &copy; Copyright {today.getFullYear()} - Leonardo Brandt
                 </div>
             </div>
 

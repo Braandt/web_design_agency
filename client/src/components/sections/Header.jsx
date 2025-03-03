@@ -1,10 +1,10 @@
 const Header = () => {
     return (
-        <div className="mx-4 flex justify-between items-center rounded-lg px-3 h-16 bg-cyan-950/60 border-[1px] border-white/10 backdrop-blur-lg font-sans-3 tracking-wider z-50
-        lg:px-6 lg:rounded-xl lg:h-20 lg:mx-8">
+        <div className="mx-4 flex justify-between items-center rounded-lg px-3 h-16 bg-cyan-950/60 border-[1px] border-white/10 font-sans-3 tracking-wider z-50
+        lg:px-12 lg:rounded-xl lg:h-20 lg:mx-8">
 
-            <div className="h-12 flex">
-                <img src="/logo.svg" alt="" />
+            <div className="text-xl tracking-widest">
+                <span className="text-white/60">Leonardo</span> Brandt
             </div>
 
             <div
@@ -20,13 +20,13 @@ const Header = () => {
                 className="hidden gap-12 items-center
                 md:flex"
             >
-                <a href="/">Home</a>
-                <a href="/">Serviços</a>
-                <a href="/">Portfolio</a>
+                <a href="/" className="text-white/70">Home</a>
+                <a href="#services">Serviços</a>
+                <a href="#portfolio">Portfolio</a>
 
-                <button className="bg-cyan-50 text-cyan-950 uppercase py-1 px-3 rounded-full">Entrar em contato</button>
 
             </div>
+            <button className="bg-cyan-50 text-nowrap justify-self-end text-cyan-950 uppercase py-1 px-3 rounded-full">Entrar em contato</button>
 
         </div>
     )

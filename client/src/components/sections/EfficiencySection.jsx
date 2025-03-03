@@ -48,7 +48,7 @@ const EfficiencySection = () => {
                 <div className="flex justify-between gap-2">
                     <EfficiencyItem number='100%' text='Satisfação Garantida' />
                     <EfficiencyItem number='100' text='Page Speed Scores' />
-                    <EfficiencyItem number='5/5' text='Revies do 
+                    <EfficiencyItem number='5/5' text='Reviews do 
                     Google' />
                 </div>
 
@@ -62,7 +62,7 @@ const EfficiencySection = () => {
                 <div className="mt-8">
                     <SectionTitle preTitle='Performance' title='Seu site com a maior performance' />
 
-                    <p>Quando se trata de tempos de carregamento de sites, poucos conseguem obter as pontuações do Google PageSpeed ​​que obtemos com cada site. Teste os tempos de carregamento do seu site com o Google PageSpeed ​​Insights e veja qual é a pontuação do seu site atual agora.</p>
+                    <p className="mt-4 mb-8">Quando se trata de tempos de carregamento de sites, prezo muito em obter as pontuações máxima possível do Google PageSpeed. Teste os tempos de carregamento do seu site com o Google PageSpeed ​​Insights e veja qual é a pontuação do seu site atual agora.</p>
                 </div>
 
                 <div className="flex flex-col gap-4 mt-4">
@@ -71,7 +71,7 @@ const EfficiencySection = () => {
 
                     <EfficiencyItem2 icon={<TbSeo size='48' />} text={'Sites mais rápidos podem ajudar a melhorar o SEO e o desempenho dos seus anúncios do Google.'} />
 
-                    <EfficiencyItem2 icon={<MdDevices size='48' />} text={'Nossos sites carregam instantaneamente em menos de 1 segundo ou menos, o que leva a uma melhor experiência do usuário e conversões.'} />
+                    <EfficiencyItem2 icon={<MdDevices size='48' />} text={'Meus sites carregam instantaneamente em menos de 1 segundo ou menos, o que leva a uma melhor experiência do usuário e conversões.'} />
 
                 </div>
 

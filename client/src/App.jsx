@@ -1,11 +1,7 @@
-import { useState } from "react"
-import ContactButton from "./components/ContactButton"
-import ContactPopUp from "./components/ContactPopUp"
 import AboutSection from "./components/sections/AboutSection"
 import ContactButtonSection from "./components/sections/ContactButtonSection"
 import EfficiencySection from "./components/sections/EfficiencySection"
 import Footer from "./components/sections/Footer"
-import FunnyCircles from "./components/sections/FunnyCircles"
 import Header from "./components/sections/Header"
 import Hero from "./components/sections/Hero"
 import PortfolioSection from "./components/sections/PortfolioSection"
@@ -13,7 +9,6 @@ import PricesSection from "./components/sections/PricesSection"
 import ServicesSection from "./components/sections/ServicesSection"
 
 function App() {
-
 
     return (
         <div className="">
@@ -33,7 +28,7 @@ function App() {
 
                 <EfficiencySection />
 
-                <PricesSection />
+                {/* <PricesSection /> */}
 
             </div>
             <Footer />

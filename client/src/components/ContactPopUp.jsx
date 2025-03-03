@@ -62,7 +62,7 @@ const ContactPopUp = ({ setContactPopUpIsOpen }) => {
                 <SectionTitle preTitle="contato" title="Fale com a gente 📢" />
 
                 <p className="mt-2 font-sans normal-case text-base">
-                    Envie-nos um email e nos conte tudo que você deseja ter em seu novo site. Respondemos a todos dentro de 24 horas. Ou nos ligue e podemos conversar imediatamente. Se não estivermos disponíveis no momento retornaremos no mesmo dia.
+                    Envie um email e me conte tudo que você deseja ter em seu novo site. Respondo a todos dentro de 24 horas. Ou me ligue e podemos conversar imediatamente 😉
                 </p>
 
                 <div className="flex flex-col mt-4 gap-4">

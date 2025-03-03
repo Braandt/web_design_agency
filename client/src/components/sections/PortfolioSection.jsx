@@ -19,6 +19,24 @@ const services = [
         text: 'Serviço para empresa americana de acupuntura incluindo modelagem 3D e desenvolvimento utilizando ferramentas de visualização e interatividade com modelos 3D.',
         src: 'portfolio/3.png',
         href: 'https://meridianlines.vercel.app/'
+    },
+    {
+        title: 'Marble Race',
+        text: 'Mini game desenvolvido para projetos acadêmico americano, utilizando bibliotecas de interação e animações em 3 dimensões.',
+        src: 'portfolio/4.png',
+        href: 'https://marble-game-gamma.vercel.app/'
+    },
+    {
+        title: 'Where in the world',
+        text: 'Freelance para desenvolvedora americana. Desenvolvido com HTML, CSS e JavaScript webpage mostrar informações de todos os países listados.',
+        src: 'portfolio/5.png',
+        href: 'https://countries-page-one.vercel.app/'
+    },
+    {
+        title: 'Space Travel',
+        text: 'Template desenvolvido para empresa americana de expedições. Guardando o lugar de todos os elementos da página está uma possível vigem para o espaço, com algumas opções de destino :p',
+        src: 'portfolio/6.png',
+        href: 'https://space-trip.vercel.app/'
     }
 ]
 
@@ -30,18 +48,18 @@ const PortfolioSection = () => {
         >
             <div className="lg:flex lg:gap-12">
                 <div className="">
-                    <SectionTitle preTitle='portfolio' title='Projetos realizados' />
+                    <SectionTitle preTitle='portfolio' title='Últimos projetos' />
                 </div>
 
                 <div className="hidden lg:block border-[1px] border-cyan-500"></div>
 
                 <div className="mt-2 flex-1">
-                    Seja sua empresa um restaurante, uma construtora, uma agência de consultoria, start up, clínica de dermatologia, nós podemos desenvolver um website bonito e eficiente que funciona sem bugs e atrasos adequado para a sua indústria.
+                    Seja sua empresa um restaurante, uma construtora, uma agência de consultoria, start up, clínica de psicologia, nós podemos desenvolver um website bonito e eficiente que funciona sem bugs e atrasos adequado para a sua indústria.
                 </div>
             </div>
 
             <div
-                className="mt-8 flex flex-col items-center
+                className="mt-8 flex flex-col items-center justify-center flex-wrap
                 lg:flex-row lg:gap-12"
             >
                 {services.map((props, index) => (

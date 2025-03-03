@@ -6,27 +6,27 @@ import ContactButtonSection from "./ContactButtonSection"
 const services = [
     {
         title: '100% SEGURO',
-        text: 'Nossos websites são desenvolvidos com arquitetura simples e confiável não deixando espaço para hackers se aproveitarem de suas informações.'
+        text: 'Websites desenvolvidos com arquitetura simples e confiável não deixando espaço para hackers se aproveitarem de suas informações.'
     },
     {
         title: '100 "PAGESPEED SCORES"',
-        text: 'Nossos sites são construídos com propósito, por isso obtemos pontuações de velocidade perfeitas de 98-100/100 com o Google.'
+        text: 'Sites construídos com propósito, por isso obtemos pontuações de velocidade perfeitas de 98-100/100 com o Google.'
     },
     {
         title: 'SUPORTE INIGUALÁVEL',
-        text: 'Ligue ou envie uma mensagem de texto a qualquer momento sem ter que falar com robôs. Quando você nos liga, você me encontra - o proprietário e desenvolvedor.'
+        text: 'Ligue ou envie uma mensagem de texto a qualquer momento sem ter que falar com robôs. Quando você me liga, fala diretamente comigo.'
     },
     {
         title: 'DESIGN CUSTOMIZADO',
-        text: 'Nossos designs são feitos por uma equipe de design interna, o que nos permite fazer tudo o que quisermos.'
+        text: 'Os designs são feitos por mim mesmo ou por profissionais parceiros, o que nos permite fazer tudo o que quisermos.'
     },
     {
         title: 'GARANTIA DE DINHEIRO DE VOLTA',
-        text: 'Se não pudermos projetar algo que você goste, você recebe seu dinheiro de volta e o contrato é cancelado. Nós defendemos nosso trabalho.'
+        text: 'Se não puder projetar algo que você goste, você recebe seu dinheiro de volta e o contrato é cancelado. Nós defendemos nosso trabalho.'
     },
     {
         title: 'ENTENDEMOS DE SEO',
-        text: 'Sem óleo de cobra, sem truques, sem mentiras. Explicamos muito claramente o que é SEO, como funciona e o que podemos fazer para que você obtenha uma ótima classificação.'
+        text: 'Explicamos claramente o que é SEO, como funciona e o que posso fazer para que você obtenha uma ótima classificação.'
     },
 ]
 
@@ -73,7 +73,7 @@ const ServicesSection = () => {
 
                 <div className="mt-2">Oferecemos um belo website de 5 páginas para pequenas empresas a partir de $700. Se você precisar de mais do que isso, fazemos preços personalizados com base no escopo do trabalho, número de páginas adicionais e tempo envolvido. Inclui design, desenvolvimento, hospedagem, edições, suporte 24 horas por dia, 7 dias por semana e atualizações vitalícias.</div>
 
-                <div className="flex flex-col gap-4 mt-8 mx-auto bg-black/20 p-4
+                <div className="flex flex-col gap-8 mt-8 mx-auto bg-black/20 p-4
                 md:max-w-4xl
                 lg:grid lg:grid-cols-2">
                     {services.map((props, index) => (

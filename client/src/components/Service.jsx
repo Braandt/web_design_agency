@@ -4,7 +4,7 @@ const Service = ({ title, text, src, href }) => {
     return (
         <a
             href={href}
-            className="relative group transition-all rounded-xl p-6 max-w-xl
+            className="relative group transition-all rounded-xl p-6 max-w-md min-w-96
         hover:shadow-2xl hover:bg-cyan-950"
             target="_blank"
             title={title}

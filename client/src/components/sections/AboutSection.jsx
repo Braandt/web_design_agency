@@ -11,7 +11,7 @@ const cards = [
     {
         icon: <FaMobile size='32px' className='text-cyan-50 group-hover:text-cyan-950' />,
         title: 'Prioridade mobile',
-        text: 'Nós iniciamos a criação do site primeiro para celulares e tablets. Assegurando-nos de que o site é funcional, responsivo e otimizado para todos os dispositivos. Sem bugs ou perda de conteúdo.'
+        text: 'Inicio a criação do site primeiro para celulares e tablets. Assegurando-nos de que o site é funcional, responsivo e otimizado para todos os dispositivos. Sem bugs ou perda de conteúdo.'
     },
     {
         icon: <MdDevices size='32px' className='text-cyan-50 group-hover:text-cyan-950' />,
@@ -21,7 +21,7 @@ const cards = [
     {
         icon: <BiTimer size='32px' className='text-cyan-50 group-hover:text-cyan-950' />,
         title: 'Carregamento otimizado',
-        text: 'Se seu site leva mais que 3 segundos para aparecer na tela você pode perder até 50% do seu tráfego por que ele demora muito. Nossos sites carregam em menos de 1 segundo, assim todos que visitarem seu site terão uma boa experiência.'
+        text: 'Se seu site leva mais que 3 segundos para aparecer na tela você pode perder até 50% do seu tráfego por que ele demora muito. Meus produtos carregam em menos de 1 segundo, assim todos que visitarem seu site terão uma boa experiência.'
     },
     {
         icon: <SlGraph size='32px' className='text-cyan-50 group-hover:text-cyan-950' />,
@@ -31,18 +31,18 @@ const cards = [
     {
         icon: <SiGoogleads size='32px' className='text-cyan-50 group-hover:text-cyan-950' />,
         title: 'Google ppc ads',
-        text: 'Nós também oferecemos criação e manutenção de anúncios Pay-Per-Click da Google. Campanhas eficazes de anúncios que atrairão seu público e maximizarão seu ROI'
+        text: 'Ofereço a criação e manutenção de anúncios Pay-Per-Click da Google. Campanhas eficazes de anúncios que atrairão seu público e maximizarão seu ROI'
     },
     {
         icon: <GiBrazil size='32px' className='text-cyan-50 group-hover:text-cyan-950' />,
         title: 'Feito no Brasil',
-        text: 'Nosso time é local com todo o desenvolvimento feito no Brasil. Expertise em negócios locais com o que funciona de verdade aqui.'
+        text: 'Todo o desenvolvimento é feito no Brasil. Expertise em negócios locais com o que funciona de verdade aqui.'
     },
 ]
 
 const AboutSection = () => {
     return (
-        <div className="flex flex-col items-center mt-24
+        <div id='about' className="flex flex-col items-center mt-24
         lg:mt-32">
 
             <div className="text-center lg:max-w-4xl">
@@ -51,7 +51,7 @@ const AboutSection = () => {
                 </div>
 
                 <p className="mt-8">
-                    Na CWB Web Designs, somos especializados em design e desenvolvimento de sites para pequenas empresas para clientes em qualquer lugar do Brasil. Cada linha de código é escrita à mão para garantir o melhor desempenho e deixar o Google feliz, o que ajuda a atrair mais clientes para seu site e gerar mais receita para seu negócio. Também gerenciamos as edições e manutenções para você nunca ficar na mão. Nosso objetivo é criar relacionamentos de longo prazo com nossos clientes e vê-los crescer ao longo do tempo.
+                    Especializado em design e desenvolvimento de sites, ofereço soluções para pequenas empresas de qualquer lugar do Brasil. Cada linha de código é escrita à mão para garantir o melhor desempenho e deixar o Google feliz, o que ajuda a atrair mais clientes para seu site e gerar mais receita para seu negócio. Gerencio as edições e manutenções para você nunca ficar na mão. Meu objetivo é criar relacionamentos de longo prazo com os clientes e vê-los crescer ao longo do tempo.
                 </p>
             </div>
 
